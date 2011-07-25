@@ -4,6 +4,8 @@ TinyMCE is a javascript rich text editor. It is easy to integrate with blogs, cm
 
 Plugin uses jrails(jQuery) and Paperclip plugin for image & media upload support
 
+This version uses kaminari to pagination instead of will_paginate_
+
 Features
 --------------
 - Provides Rich Text Editor
@@ -35,7 +37,7 @@ Above command will copy `paperclip`, `respond_to_parent`, `will_paginate` plugin
  
 - paperclip `git://github.com/thoughtbot/paperclip.git`
 - respond_to_parent `git://github.com/itkin/respond_to_parent.git`
-- will_paginate `git://github.com/mislav/will_paginate.git`
+- kaminari (add gem 'kaminari' to Gemfile)
  
 4. In your layout add following lines
 --------------------- 
