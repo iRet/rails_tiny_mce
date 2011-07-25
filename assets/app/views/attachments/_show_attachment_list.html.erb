@@ -14,6 +14,8 @@
 		    <br/>
 		    <%= link_to "Small", p.image.url( :small_thumb ), :onclick => "select_thumb(this);return false;"%>
 		    <br/>
+		    <%= link_to "Original", p.image.url( :original ), :onclick => "select_thumb(this);return false;"%>
+		    <br/>
 		    <%#= link_to 'Delete', delete_attachments_path(@channel.brand_name, params[:feature], :id => p.id, :media => 'print' ), :onclick => "delete_attachment(this);"%>
 		    <br/>
 		    <%= link_to 'Cancel', 'javascript:void(0)', :onclick => "cancel_image();return false;"%>

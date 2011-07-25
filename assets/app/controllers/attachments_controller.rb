@@ -3,9 +3,7 @@ class AttachmentsController < ApplicationController
 
   def manage
     @attachments = "tiny_#{params[:media]}".classify.constantize.page(params[:page]).order('created_at DESC').per(10)
-    render :update do |page|
-      page.replace_html :dynamic_images_list, :partial => 'show_attachment_list'
-    end
+    respond_to :js
   end
   
 
